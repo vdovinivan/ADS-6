@@ -21,9 +21,4 @@ TPQueue() :sta(0), sto(0) { }
     return a[(sta++) % size];
   }
 };
-struct SYM {
-  char ch;
-  int prior;
-};
-
 #endif  // INCLUDE_TPQUEUE_H_
