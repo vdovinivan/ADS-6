@@ -5,7 +5,7 @@
 template<typename T, int size>
 class TPQueue {
  private:
-  T a[95];
+  T a[100];
   int sta;
   int sto;
  public:
@@ -21,4 +21,9 @@ TPQueue() :sta(0), sto(0) { }
     return a[(sta++) % size];
   }
 };
+struct SYM {
+  char ch;
+  int prior;
+};
+
 #endif  // INCLUDE_TPQUEUE_H_
